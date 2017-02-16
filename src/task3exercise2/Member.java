@@ -8,8 +8,8 @@ public class Member {
     //
     //------------------- your code here-----------------------
         private String name;
-        private String special;
-        private int numOfProject;
+        private String specialization;
+        private int projectWorked = 0;
     //---------------------------------------------------------
     
     // 2. Declare your 2 Constructor here:
@@ -17,44 +17,44 @@ public class Member {
     // NAMA : M Adli Rachman 
     //
     //------------------- your code here-----------------------
-    public void Member(String name){
+    public void Member(String name, String specialization){
         this.name = name;
+        this.specialization = specialization;
     }
     
-    public void Member(String name, String special){
+    public void Member(String name, String specialization){
         this.name = name;
-        this.special = special;
+        this.specialization = specialization;
     }
     //---------------------------------------------------------
-    
+    public String getName() {    
+        return name;
+        
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
+    }
+
+    public int getProjectWorked() {
+        return projectWorked;
+    }
 
     // 3. Declare your Setter and Getter method here:
     // NIM : 1301150040
     // NAMA : M Adli Rachman 
     //
     //------------------- your code here-----------------------
-    public String getName() {
-        return name;
-    
-    }    
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSpecial() {
-        return special;
-    }
-
-    public void setSpecial(String special) {
-        this.special = special;
-    }
-
-    public int getNumOfProject() {
-        return numOfProject;
-    }
-    public void setNumOfProject(int numOfProject) {        
-        this.numOfProject = numOfProject;
+    public void setProjectWorked(int projectWorked) {    
+        this.projectWorked = projectWorked;
     }
 
     //---------------------------------------------------------
@@ -69,7 +69,7 @@ public class Member {
     //            worked on 5 project(s)"
     public String toString() {
         //------------------- your code here-----------------------
-        System.out.println("Member "+name+" specialized "+special+" Programing and already worked on "+numOfProject+" Project(s)");
+        System.out.println("Member "+name+" specialized "+specialization+" Programing and already worked on "+projectWorked+" Project(s)");
         return null;
         
         //---------------------------------------------------------
