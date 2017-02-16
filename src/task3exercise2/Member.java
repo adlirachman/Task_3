@@ -17,9 +17,8 @@ public class Member {
     // NAMA : M Adli Rachman 
     //
     //------------------- your code here-----------------------
-    public void Member(String name, String specialization){
+    public void Member(String name){
         this.name = name;
-        this.specialization = specialization;
     }
     
     public void Member(String name, String specialization){
