@@ -1,55 +1,46 @@
 package task3exercise1;
 
 public class AppStore {
+    // NIM : 1301154152 
+    // NAMA : Valentino Wahyu Gusti Arson 
+    private Application[] appList = new Application[100];
+    private int totalApp;
+    private int i;
     
-    // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    //
-    //------------------- your code here-----------------------
+    // NIM : 1301154152
+    // NAMA : Valentino Wahyu Gusti Arson  
+    public void createNewApp(String appName, int appSize){
+        Application newApp = new Application(appName, appSize);
+        for(int i = 1; i < appList.length; i++){
+            if(appList[i] == null){
+                appList[i] = newApp;
+                this.totalApp = i;
+                break;
+            }
+        }
+    }
     
-    //---------------------------------------------------------
+    // NIM : 1301154152
+    // NAMA : Valentino Wahyu Gusti Arson  
+    public Application getApp(int id){
+        return appList[id];
+    }
     
-    // 2. Declare your Setter and Getter method here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    //
-    //------------------- your code here-----------------------
+    public int getTotalApp(){
+        return totalApp;
+    }
     
-    //---------------------------------------------------------
-    
-    
-    // 3. Create method createNewApp( appName, appSize ) here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    // instantiate new Application object and insert it in array appList
-    //
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
-    
-    
-    // 4. Create method getApp( id ) : Application here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    // returns Application object from array appList with array index = id
-    //
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
-        
-    
-    // 5. Create method toString() : String here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    // @return returns String that contains the number of Application available
-    // 
-    // example : "There are 5 applications ready to install"
-    // 
-    public String toString() {
-    //------------------- your code here-----------------------
+    public Application getAppList(){
+        for(int p = 0; p <= this.i; p++){
+            return appList[p];
+        }
         return null;
+    }
     
-    //---------------------------------------------------------
+    // NIM : 1301154152 
+    // NAMA : Valentino Wahyu Gusti Arson 
+    @Override
+    public String toString() {
+        return  ("Terdapat "+totalApp+" Aplikasi yang siap diinstall");
     }
 }
