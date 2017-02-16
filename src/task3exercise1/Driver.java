@@ -25,7 +25,7 @@ public class Driver {
         // and app size 100, 200, 300, and 400 respectively
         aps.createNewApp( "app1" , 100 );
         aps.createNewApp( "app2" , 100 );
-        aps.createNewApp( ..., ... );
+        
         
         // display the status of App Store aps
         System.out.println( aps );
