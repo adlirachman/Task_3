@@ -7,6 +7,7 @@ public class Application {
     // NAMA : M Adli Rachman  
         private String appName;
         private int appSize;
+        private int appId;
     
     // 2. Declare Constructor here:
     // NIM : 1301150040 
@@ -18,7 +19,14 @@ public class Application {
         public void Application(String appName, int appSize){
             this.appName = appName;
             this.appSize = appSize;
+            this.appId = 0;
         }
+        
+        public Application(String appName, int appSize, int appId){
+        this.appName = appName;
+        this.appSize = appSize;
+        this.appId   = appId;
+    }
     //---------------------------------------------------------
     
 
@@ -42,6 +50,15 @@ public class Application {
         this.appSize = appSize;
     }
 
+    public int getAppId() {
+        return appId;
+    }
+
+    public void setAppId(int appId) {
+        this.appId = appId;
+    }
+    
+
     //---------------------------------------------------------
     // 4. Create method toString() : String here:
     // NIM : 1301150040
@@ -53,8 +70,9 @@ public class Application {
     public String toString() {
         //------------------- your code here-----------------------
         System.out.println("Application");
-        System.out.println("Name :"+appName);
-        System.out.println("Size :"+appSize);
+        System.out.printlin("ID  : "+appId);
+        System.out.println("Name : "+appName);
+        System.out.println("Size : "+appSize);
         return null;
         
         //---------------------------------------------------------
