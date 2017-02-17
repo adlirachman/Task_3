@@ -7,8 +7,8 @@ package task3exercise1;
 
 /**
  * NIM 1 : 1301150040
- * NIM 2 : ................ 
- * NIM 3 : ................
+ * NIM 2 : 1301154152 
+ * NIM 3 : 1301154516
  *
  */
 public class Driver {

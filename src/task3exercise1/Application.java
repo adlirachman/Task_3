@@ -70,7 +70,7 @@ public class Application {
     public String toString() {
         //------------------- your code here-----------------------
         System.out.println("Application");
-        System.out.printlin("ID  : "+appId);
+        System.out.println("ID  : "+appId);
         System.out.println("Name : "+appName);
         System.out.println("Size : "+appSize);
         return null;
